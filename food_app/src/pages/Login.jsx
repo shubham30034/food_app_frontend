@@ -5,6 +5,7 @@ import { useState } from 'react'
 import registationServices from '../hooks/login'
 import { useNavigate } from 'react-router-dom'
 import {validationLogin} from '../utils/validation/validation'
+import { login } from '../utils/Slices/loginSlice'
 
 const Login = () => {
 
@@ -91,6 +92,7 @@ const Login = () => {
           return;
       }
         
+      dispatch(login())
        
         navigate("/body");
     } catch (error) {

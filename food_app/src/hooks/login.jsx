@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = "http://localhost:5000/api/v1";
+const baseUrl = "https://food-app-backend-vhy3.onrender.com/api/v1";
 
 const registationServices = {
     signup: async function(data) {

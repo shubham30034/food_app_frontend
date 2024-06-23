@@ -2,7 +2,7 @@ import axios from 'axios';
 import { addMenu } from '../utils/Slices/MenuSlice';
 
 export const fetchMenu = async (id, dispatch) => {
-    const baseUrl = `http://localhost:5000/api/v1`;
+    const baseUrl = `https://food-app-backend-vhy3.onrender.com/api/v1`;
     const token = localStorage.getItem("token"); // Retrieve the token from local storage
 
     try {

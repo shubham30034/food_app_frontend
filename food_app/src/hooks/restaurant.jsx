@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { allRestaurant } from "../utils/Slices/RestaurantSlice";
 
 const getAllRestaurant = async (dispatch) => {
-    const baseUrl = "http://localhost:5000/api/v1";
+    const baseUrl = "https://food-app-backend-vhy3.onrender.com/api/v1";
     
 
     try {
